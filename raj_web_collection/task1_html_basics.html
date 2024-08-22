@@ -5,7 +5,6 @@
 
             <style>
                 .borders{
-                    border: 2px solid black;
                     padding-left: 20px;
                 }
                 body{
@@ -32,6 +31,31 @@
                     border-radius: 30px;
 
                 }
+                table{
+                    margin: 20px;
+                    ;
+                }
+                table, th, tr{
+                    border: 1px solid white;
+                    padding: 5px;
+                }
+                table, th, tr, td{
+                    border: 1px solid white;
+                    padding: 5px;
+                }
+                #owner{
+                    background: green;
+                }
+                #exp_tab{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                img{
+                    height: 40px;
+                    width: 120px;
+                }
+                
             </style>
 
         </head>
@@ -46,7 +70,7 @@
 
             <div class="borders">
                 <dl>
-                    <dt><h1>HTML:</h1></dt>
+                    <dt><h1>HTML :</h1></dt>
                         <dd>( Hyper text Markup Language )</dd>
                         <br>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button>Know more</button></a>
@@ -54,7 +78,7 @@
                         <br>
                         <br>
                     
-                    <dt><h1>Headings</h1></dt>
+                    <dt><h1>Headings :</h1></dt>
                         <dd>HTML headings are titles or subtitles that you want to display on a webpage.</dd>
                             <div class="example">
                                 <h1>Heading 1</h1>
@@ -69,7 +93,7 @@
                         <br>
                         <br>
                     
-                    <dt><h1>Tags</h1></dt>
+                    <dt><h1>Tags :</h1></dt>
                     <dd>HTML tags are the invisible instructions that structure and define the content and elements on a webpage, turning code into the web we see.</dd><br>
 
                         <div>
@@ -93,7 +117,7 @@
                             <br>
                             <br>
 
-                            <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank"><button>Know more</button></a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button>Know more</button></a>
                         </div>
                         
                         <br>
@@ -103,13 +127,59 @@
                         <dd>The<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" title="table">&lt; table &gt;</a> tag is the blueprint that organizes data into rows and columns, creating a clear and structured layout on a webpage.</dd>
                         <br>
                         <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank"><button>Know more</button></a>
-                        
-                        <div class="centerprop">
+                        <h3>Example_Tables :</h3>
+                        <div class="centerprop" id="exp_tab">
                             <table>
-                                <caption>Table_1<br></caption>
-                                <th></th>
+                                <caption>Table 1 <br> <br></caption>
+                                <th>Sl.No</th>
+                                <th>Name</th>
+                                <th>Roll No</th>
+                                <tr>
+                                    <td rowspan="2">1.</td>
+                                    <td rowspan="2" id="owner">Raj Kumar</td>
+                                    <td >2288A05K7</td>
+                                    
+                                </tr>
+                                <tr><td>62815890xx</td></tr>
+                                <tr>
+                                    <td rowspan="2">2.</td>
+                                    <td rowspan="2">Uday Kiran</td>
+                                    <td>2288A05N4</td>
+                                </tr>
+                                <tr><td>93916530xx</td></tr>
+                                <tr>
+                                    <td rowspan="2">3.</td>
+                                    <td rowspan="2">Pravalika</td>
+                                    <td>2288A05N5</td>
+                                </tr>
+                                <tr><td>85200617xx</td></tr>
+                                <tr>
+                                    <td rowspan="2">3.</td>
+                                    <td rowspan="2">Dhana</td>
+                                    <td>2288A05Q2</td>
+                                </tr>
+                                <tr><td>63096217xx</td></tr>
                             </table>
+
+                            <table>
+                                <caption>Table 2 <br><br></caption>
+                                <tr>
+                                    <th><img src="./images/hod.jpg" alt="HOD"></th>
+                                    <th><img src="./images/coordinator.jpg" alt="Coordinator"></th>
+                                    <th><img src="./images/" alt="Dean, Academic"></th>
+                                    <th><img src="./images/principal.jpg" alt="Principal"></th>
+                                </tr>
+                                <tr>
+                                    <th>HOD</th>
+                                    <th>CHIEF TIME TABLE COORDINATOR</th>
+                                    <th>DEAN, ACADEMIC AFFAIRS</th>
+                                    <th>PRINCIPAL</th>
+                                </tr>
+                                
+                            </table>
+                                
                         </div>
+                        
 
                         <br>
                         <br>
